@@ -288,6 +288,7 @@ footer {
   font-weight: bold;
   height: 70px;
   padding-left: 5rem;
+  padding-top: 1rem;
   margin-bottom: 0;
   padding-bottom: 0;
 }
@@ -317,7 +318,7 @@ footer {
 
 @media (max-width: 1200px) {
   .scroll-top {
-    top: 40rem;
+    top: 39rem;
   }
 
   .menu-icon {
