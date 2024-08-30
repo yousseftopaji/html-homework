@@ -166,6 +166,10 @@ header {
   color: rgb(108, 218, 255);
 }
 
+.VIA {
+  color: #1af0d0;
+}
+
 .about-data {
   background-color: #2f2f2f;
   opacity: 0.8;
@@ -239,7 +243,7 @@ header {
   display: flex;
   justify-content: center;
   gap: 3rem;
-  flex-wrap: nowrap; /* Prevent wrapping */
+  flex-wrap: wrap; /* Prevent wrapping */
   height: 15rem;
 }
 
@@ -248,6 +252,7 @@ header {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 .project-description {
@@ -261,7 +266,10 @@ header {
 .project-img {
   max-height: 199px;
   max-width: 384px;
+  width: 100%; /* Ensure the image scales to the container width */
+  height: auto; /* Maintain the aspect ratio */
   border-radius: 4px;
+  object-fit: cover; /* Ensures the image scales while maintaining its aspect ratio */
 }
 
 @media (max-width: 1200px) {
@@ -318,7 +326,7 @@ footer {
   height: 70px;
   padding-left: 5rem;
   padding-top: 1rem;
-  margin-bottom: 0;
+  margin-bottom: -100px;
   padding-bottom: 0;
 }
 
